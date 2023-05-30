@@ -1,0 +1,144 @@
+2023-05-16T13:28:42.696Z - Error: TypeError: Cannot read properties of undefined (reading 'end')
+2023-05-16 13:30:09 - Error: TypeError: Cannot read properties of undefined (reading 'end')
+2023-05-16 13:31:11 - Cannot connect to database.
+2023-05-16 13:41:01 - Cannot connect to database.
+2023-05-16 13:41:21 - Cannot connect to database.
+2023-05-16 13:42:11 - Cannot connect to database.
+2023-05-16 13:42:31 - Cannot connect to database.
+2023-05-16 13:45:49 - Cannot connect to database.
+2023-05-16 13:47:28 - Cannot connect to database.
+2023-05-16 13:50:00 - Cannot connect to database.
+2023-05-19 10:45:14 - Cannot connect to database.
+2023-05-19 10:45:14 - Cannot connect to database.
+2023-05-19 10:46:15 - Cannot connect to database.
+2023-05-19 10:46:15 - Cannot connect to database.
+2023-05-19 10:49:17 - Test: Cannot connect to database.
+2023-05-19 10:49:17 - CheckDatabaseHealth: Cannot connect to database.
+2023-05-19 11:01:50 - Test: Cannot connect to database.
+2023-05-19 11:01:50 - CheckDatabaseHealth: Cannot connect to database.
+2023-05-19 11:07:14 - Test: Cannot connect to database.
+2023-05-19 11:08:24 - Test: Cannot connect to database.
+2023-05-19 11:09:24 - Test: Cannot connect to database.
+2023-05-19 11:18:17 - Test: Cannot connect to database.
+2023-05-19 11:19:05 - Test: Cannot connect to database.
+2023-05-19 11:21:06 - Test: Cannot connect to database.
+2023-05-19 11:22:10 - Test: Cannot connect to database.
+2023-05-19 11:23:50 - Test: Cannot connect to database.
+2023-05-19 11:23:57 - Test: Cannot connect to database.
+2023-05-19 11:24:08 - Test: Cannot connect to database.
+2023-05-19 11:25:35 - Test: Cannot connect to database.
+2023-05-19 11:25:39 - Test: Cannot connect to database.
+2023-05-19 11:25:42 - Test: Cannot connect to database.
+2023-05-19 11:25:45 - Test: Cannot connect to database.
+2023-05-19 11:35:59 - Test: Cannot connect to database.
+2023-05-19 11:40:42 - Test: Cannot connect to database.
+2023-05-19 11:52:02 - Test: Cannot connect to database.
+2023-05-19 11:52:29 - Test: Cannot connect to database.
+2023-05-19 11:53:39 - Test: Cannot connect to database.
+2023-05-19 11:55:51 - Test: Cannot connect to database.
+2023-05-19 14:11:48 - Failed to update book with id .
+2023-05-19 14:14:06 - Book with id 3 does not exist.
+2023-05-19 14:16:08 - Book with id 2 does not exist.
+2023-05-19 14:22:07 - Book with id 2 does not exist.
+2023-05-19 14:22:39 - Book with id 1 does not exist.
+2023-05-19 14:22:53 - Book with id 5 does not exist.
+2023-05-22 07:23:58 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 07:25:09 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 07:26:23 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:26:51 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:28:30 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:29:19 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:29:47 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:30:18 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:30:39 - Cannot read properties of undefined (reading 'title')
+2023-05-22 07:50:03 - Book with id 2 does not exist.
+2023-05-22 07:50:10 - Book with id 5 does not exist.
+2023-05-22 08:09:51 - Cannot connect to database.
+2023-05-22 09:07:16 - Failed to delete book. Book with id 49 does not exist.
+2023-05-22 09:07:16 - Book with id 49 does not exist.
+2023-05-22 09:07:39 - Book with id 49 does not exist.
+2023-05-22 09:07:39 - Failed to delete book. Book with id 49 does not exist.
+2023-05-22 09:10:37 - Author with id 275 does not exist.
+2023-05-22 09:10:37 - Failed to delete author. Author with id 275 does not exist.
+2023-05-22 09:11:00 - Author with id 27555 does not exist.
+2023-05-22 09:11:00 - Failed to update author. Author with id 27555 does not exist.
+2023-05-22 09:27:35 - API is under maintenance
+2023-05-22 09:27:35 - Duplicate entry 'Sara Harka' for key 'authors.name'
+2023-05-22 09:34:46 - Author already exists
+2023-05-22 14:17:41 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:18:20 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:20:04 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:21:20 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:21:44 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:23:49 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:24:06 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:24:33 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:32:35 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:47:44 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-22 14:48:08 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-25 08:07:56 - Failed to update book with id .
+2023-05-25 08:07:56 - Failed to update book with id .
+2023-05-25 08:19:12 - request.on is not a function
+2023-05-25 08:19:12 - API is under maintenance
+2023-05-25 08:19:12 - API is under maintenance
+2023-05-25 08:45:12 - You are not authorized to perform this action
+2023-05-25 08:45:12 - API is under maintenance
+2023-05-25 08:45:33 - You are not authorized to perform this action
+2023-05-25 08:45:33 - API is under maintenance
+2023-05-25 08:45:34 - You are not authorized to perform this action
+2023-05-25 08:45:34 - API is under maintenance
+2023-05-25 09:15:52 - Can't add new command when connection is in closed state
+2023-05-25 09:16:36 - Can't add new command when connection is in closed state
+2023-05-25 09:16:36 - API is under maintenance
+2023-05-25 09:16:53 - Can't add new command when connection is in closed state
+2023-05-25 09:16:53 - API is under maintenance
+2023-05-25 09:17:51 - newBook is not defined
+2023-05-25 09:17:51 - API is under maintenance
+2023-05-25 09:19:07 - newBook is not defined
+2023-05-25 09:19:07 - API is under maintenance
+2023-05-25 09:19:32 - newBook is not defined
+2023-05-25 09:19:32 - API is under maintenance
+2023-05-25 09:29:19 - You are not authorized to perform this action.
+2023-05-25 09:29:43 - You are not authorized to perform this action.
+2023-05-26 13:29:41 - connection is not defined
+2023-05-26 13:31:06 - createConnection is not defined
+2023-05-26 13:31:25 - Cannot read properties of undefined (reading 'isServer')
+2023-05-26 15:50:21 - undefined
+2023-05-26 16:12:37 - parseRequestDatata is not defined
+2023-05-26 16:14:03 - logEventToLogFile is not defined
+2023-05-26 16:15:56 - logEventToLogFile is not defined
+2023-05-26 16:16:27 - Cannot read properties of undefined (reading 'title')
+2023-05-26 16:16:27 - API is under maintenance
+2023-05-26 16:17:23 - Cannot read properties of undefined (reading 'title')
+2023-05-26 16:17:23 - API is under maintenance
+2023-05-26 16:20:26 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-26 16:20:26 - API is under maintenance
+2023-05-30 09:39:20 - Book with id 80 does not exist.
+2023-05-30 09:39:20 - Failed to update book. Book with id 80 does not exist.
+2023-05-30 09:55:28 - Author with id 19555 does not exist.
+2023-05-30 09:55:28 - Failed to delete author. Author with id 19555 does not exist.
+2023-05-30 10:00:30 - Bind parameters must not contain undefined. To pass SQL NULL specify JS null
+2023-05-30 10:00:30 - API is under maintenance
+2023-05-30 10:02:04 - Author already exists
+2023-05-30 10:03:18 - Author already exists
+2023-05-30 10:06:38 - Author already exists
+2023-05-30 10:11:28 - Failed to update author with id 13.
+2023-05-30 10:11:28 - Failed to update author with id 13.
+2023-05-30 10:31:51 - Unknown column 'userData.username' in 'where clause'
+2023-05-30 10:32:24 - Unknown column 'userData.username' in 'where clause'
+2023-05-30 11:37:09 - Failed to create database connection.
+2023-05-30 11:37:09 - Cannot connect to database.
+2023-05-30 11:39:19 - Cannot connect to database.
+2023-05-30 11:39:19 - API is under maintenance.
+2023-05-30 11:41:36 - API is under maintenance.
+2023-05-30 11:41:36 - Cannot connect to database.
+2023-05-30 11:42:35 - Cannot connect to database.
+2023-05-30 11:42:35 - API is under maintenance.
+2023-05-30 11:42:52 - Cannot connect to database.
+2023-05-30 11:42:52 - API is under maintenance.
+2023-05-30 11:43:27 - Cannot connect to database.
+2023-05-30 11:43:27 - API is under maintenance.
+2023-05-30 11:44:42 - API is under maintenance.
+2023-05-30 11:44:42 - Cannot connect to database.
+2023-05-30 11:46:41 - Cannot connect to database.
+2023-05-30 11:46:41 - API is under maintenance.

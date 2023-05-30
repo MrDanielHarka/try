@@ -1,0 +1,30 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Game of life",
+      "ISBN": "978-3-16-148410-0",
+      "author_id": 1,
+      "genre_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Game of death",
+      "ISBN": "978-3-16-148410-1",
+      "author_id": 2,
+      "genre_id": 1
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Gabriel GMBH",
+      "books": ["Game of life"]
+    },
+    {
+      "id": 2,
+      "name": "Negin GMBH",
+      "books": ["Game of death"]
+    }
+  ]
+}

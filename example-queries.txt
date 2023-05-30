@@ -1,0 +1,98 @@
+CREATE DATABASE bookstore;
+
+SHOW DATABASES;
+
+USE bookstore;
+
+CREATE TABLE books (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  author_id INT(11) NOT NULL,
+  published_year INT(4) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE authors (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) UNIQUE NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO users (username, password) VALUES
+('admin', 'Adm1n');
+
+SHOW TABLES;
+
+INSERT INTO books (title, author_id, published_year) VALUES
+('The Great Gatsby', 1, 1925),
+('To Kill a Mockingbird', 2, 1960),
+('1984', 3, 1949),
+('Animal Farm', 3, 1945),
+('Brave New World', 4, 1932),
+('The Catcher in the Rye', 5, 1951),
+('One Hundred Years of Solitude', 6, 1967),
+('The Picture of Dorian Gray', 7, 1890),
+('Pride and Prejudice', 8, 1813),
+('Jane Eyre', 9, 1847),
+('Wuthering Heights', 10, 1847),
+('The Adventures of Huckleberry Finn', 11, 1884),
+('The Scarlet Letter', 12, 1850),
+('Lord of the Flies', 13, 1954),
+('The Lord of the Rings', 14, 1954),
+('The Hobbit', 14, 1937),
+('The Hitchhiker''s Guide to the Galaxy', 15, 1979),
+('The Da Vinci Code', 16, 2003),
+('The Girl with the Dragon Tattoo', 17, 2005),
+('The Hunger Games', 18, 2008),
+('Harry Potter and the Philosopher''s Stone', 19, 1997),
+('The Chronicles of Narnia', 20, 1950),
+('The Shining', 21, 1977),
+('The Stand', 21, 1978),
+('The Road', 22, 2006);
+
+SELECT * FROM books;
+
+INSERT INTO authors (id, name) VALUES
+(1, 'F. Scott Fitzgerald'),
+(2, 'Harper Lee'),
+(3, 'George Orwell'),
+(4, 'Aldous Huxley'),
+(5, 'J.D. Salinger'),
+(6, 'Gabriel Garcia Marquez'),
+(7, 'Oscar Wilde'),
+(8, 'Jane Austen'),
+(9, 'Charlotte Bronte'),
+(10, 'Emily Bronte'),
+(11, 'Mark Twain'),
+(12, 'Nathaniel Hawthorne'),
+(13, 'William Golding'),
+(14, 'J.R.R. Tolkien'),
+(15, 'Douglas Adams'),
+(16, 'Dan Brown'),
+(17, 'Stieg Larsson'),
+(18, 'Suzanne Collins'),
+(19, 'J.K. Rowling'),
+(20, 'C.S. Lewis'),
+(21, 'Stephen King'),
+(22, 'Cormac McCarthy');
+
+SELECT * FROM authors;
+
+DROP TABLE books;
+
+DROP TABLE authors;
+
+CREATE USER 'gabriel'@'localhost' IDENTIFIED BY 'gabriel';
+CREATE USER 'ODBC'@'localhost' IDENTIFIED BY '';
+
+GRANT ALL PRIVILEGES ON bookstore.* TO 'gabriel'@'localhost';
+GRANT ALL PRIVILEGES ON bookstore.* TO 'ODBC'@'localhost';
+
+mysql -u gabriel -pgabriel

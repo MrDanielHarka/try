@@ -1,0 +1,267 @@
+openapi: '3.0.0'
+info:
+  version: '1.0.0'
+  title: 'Bookstore API'
+  description: 'API for managing books and authors in a bookstore.'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /books:
+    get:
+      summary: 'Get all books'
+      responses:
+        '200':
+          description: 'Successful response'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+    post:
+      summary: 'Create a new book'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookData'
+      responses:
+        '201':
+          description: 'Successful creation'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Book created successfully.'
+                  bookId:
+                    type: integer
+                    example: 123
+  /books/{id}:
+    get:
+      summary: 'Get a specific book'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the book to retrieve'
+          schema:
+            type: integer
+            example: 123
+      responses:
+        '200':
+          description: 'Successful response'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+    put:
+      summary: 'Update a specific book'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the book to update'
+          schema:
+            type: integer
+            example: 123
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookData'
+      responses:
+        '200':
+          description: 'Successful update'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Book updated successfully.'
+                  bookId:
+                    type: integer
+                    example: 123
+    delete:
+      summary: 'Delete a specific book'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the book to delete'
+          schema:
+            type: integer
+            example: 123
+      responses:
+        '200':
+          description: 'Successful deletion'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Book deleted successfully.'
+                  bookId:
+                    type: integer
+                    example: 123
+  /authors:
+    get:
+      summary: 'Get all authors'
+      responses:
+        '200':
+          description: 'Successful response'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Author'
+    post:
+      summary: 'Create a new author'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthorData'
+      responses:
+        '201':
+          description: 'Successful creation'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Author created successfully.'
+                  authorId:
+                    type: integer
+                    example: 123
+  /authors/{id}:
+    get:
+      summary: 'Get a specific author'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the author to retrieve'
+          schema:
+            type: integer
+            example: 123
+      responses:
+        '200':
+          description: 'Successful response'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+    put:
+      summary: 'Update a specific author'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the author to update'
+          schema:
+            type: integer
+            example: 123
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthorData'
+      responses:
+        '200':
+          description: 'Successful update'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Author updated successfully.'
+                  authorId:
+                    type: integer
+                    example: 123
+    delete:
+      summary: 'Delete a specific author'
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: 'The ID of the author to delete'
+          schema:
+            type: integer
+            example: 123
+      responses:
+        '200':
+          description: 'Successful deletion'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: 'Author deleted successfully.'
+                  authorId:
+                    type: integer
+                    example: 123
+components:
+  schemas:
+    Book:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 123
+        title:
+          type: string
+          example: 'The Great Gatsby'
+        authorId:
+          type: integer
+          example: 456
+    BookData:
+      type: object
+      properties:
+        title:
+          type: string
+          example: 'To Kill a Mockingbird'
+        authorId:
+          type: integer
+          example: 789
+    Author:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 456
+        name:
+          type: string
+          example: 'F. Scott Fitzgerald'
+    AuthorData:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 'Harper Lee'
+
+    security:
+      - bearerAuth: []
+
+tags:
+  - name: books
+    description: API endpoints related to books
+  - name: authors
+    description: API endpoints related to authors
